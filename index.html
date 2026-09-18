@@ -21,7 +21,7 @@
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center p-4 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
 
-    <div class="w-full max-w-3xl flex flex-col gap-6">
+    <div class="w-full max-w-3xl flex flex-col gap-6 animate-fade-in">
         <!-- HEADER -->
         <div class="flex items-center justify-between px-2">
             <div class="flex items-center gap-3">
@@ -42,7 +42,7 @@
         </div>
 
         <!-- MAIN INTERACTIVE SLIDER CONTAINER -->
-        <div class="relative rounded-2xl border border-slate-800/80 bg-[#0d121f]/90 p-8 md:p-10 shadow-2xl backdrop-blur-xl">
+        <div class="relative rounded-2xl border border-slate-800/80 bg-[#0d121f]/90 p-6 md:p-10 shadow-2xl backdrop-blur-xl">
             <!-- BACKGROUND GLOWS Inside Card -->
             <div class="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-purple-500/10 blur-3xl pointer-events-none"></div>
             <div class="absolute -left-20 -bottom-20 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl pointer-events-none"></div>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
 
-                <!-- SLIDE 2: PARTICIPATION BONUSES -->
+                <!-- SLIDE 2: PARTICIPATION BONUSES (RESTORED 1/5 FORMAT) -->
                 <div id="slide-content-2" class="slide-transition opacity-0 absolute top-0 left-0 w-full hidden">
                     <div class="flex justify-between items-center mb-6">
                         <span class="text-xs font-bold tracking-widest text-purple-400 uppercase">Slide 2 din 5</span>
@@ -88,76 +88,136 @@
                     </p>
                     <div class="space-y-2">
                         <div class="flex items-center justify-between p-2 md:p-2.5 rounded-xl bg-slate-900/40 border border-slate-800 hover:border-purple-500/30 transition-colors">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-6 w-6 items-center justify-center rounded-full bg-purple-500/20 text-xs font-bold text-purple-300">5/5</span>
+                            <div class="flex items-center gap-3 mr-4">
+                                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-purple-500/20 text-xs font-bold text-purple-300">5/5</span>
                                 <span class="text-xs md:text-sm font-semibold text-slate-300">Campion Complet (toate cele 5 webinarii + task-uri simple)</span>
                             </div>
-                            <span class="text-xs md:text-sm font-black text-purple-400">+10% Extra</span>
+                            <span class="text-xs md:text-sm font-black text-purple-400 whitespace-nowrap shrink-0">+10% Extra</span>
                         </div>
                         <div class="flex items-center justify-between p-2 md:p-2.5 rounded-xl bg-slate-900/40 border border-slate-800 hover:border-cyan-500/30 transition-colors">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-6 w-6 items-center justify-center rounded-full bg-cyan-500/20 text-xs font-bold text-cyan-300">4/5</span>
+                            <div class="flex items-center gap-3 mr-4">
+                                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cyan-500/20 text-xs font-bold text-cyan-300">4/5</span>
                                 <span class="text-xs md:text-sm font-semibold text-slate-300">Participant Consecvent (minim 4 webinarii cu teme bifate)</span>
                             </div>
-                            <span class="text-xs md:text-sm font-black text-cyan-400">+8% Extra</span>
+                            <span class="text-xs md:text-sm font-black text-cyan-400 whitespace-nowrap shrink-0">+8% Extra</span>
                         </div>
                         <div class="flex items-center justify-between p-2 md:p-2.5 rounded-xl bg-slate-900/40 border border-slate-800 transition-colors">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-6 w-6 items-center justify-center rounded-full bg-slate-800 text-xs font-bold text-slate-400">3/5</span>
+                            <div class="flex items-center gap-3 mr-4">
+                                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-800 text-xs font-bold text-slate-400">3/5</span>
                                 <span class="text-xs md:text-sm font-semibold text-slate-300">Participant Activ (minim 3 sesiuni din program)</span>
                             </div>
-                            <span class="text-xs md:text-sm font-black text-slate-300">+5% Extra</span>
+                            <span class="text-xs md:text-sm font-black text-slate-300 whitespace-nowrap shrink-0">+5% Extra</span>
                         </div>
                         <div class="flex items-center justify-between p-2 md:p-2.5 rounded-xl bg-slate-900/40 border border-slate-800 transition-colors">
-                            <div class="flex items-center gap-3">
-                                <span class="flex h-6 w-6 items-center justify-center rounded-full bg-slate-800 text-xs font-bold text-slate-400">1/5</span>
+                            <div class="flex items-center gap-3 mr-4">
+                                <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-800 text-xs font-bold text-slate-400">1/5</span>
                                 <span class="text-xs md:text-sm font-semibold text-slate-300">Bun Venit (minim o participare + profil 100% complet)</span>
                             </div>
-                            <span class="text-xs md:text-sm font-black text-slate-300">+3% Extra</span>
+                            <span class="text-xs md:text-sm font-black text-slate-300 whitespace-nowrap shrink-0">+3% Extra</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- SLIDE 3: PERFORMANCE PRIZES -->
+                <!-- SLIDE 3: PERFORMANCE PRIZES (STABILIZED BADGES) -->
                 <div id="slide-content-3" class="slide-transition opacity-0 absolute top-0 left-0 w-full hidden">
-                    <div class="flex justify-between items-center mb-6">
+                    <div class="flex justify-between items-center mb-4">
                         <span class="text-xs font-bold tracking-widest text-purple-400 uppercase">Slide 3 din 5</span>
                         <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">🏆 PERFORMANTA</span>
                     </div>
-                    <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-2">
-                        2. Premii Extra (Cumulabile!)
+                    <h2 class="text-xl md:text-2xl font-extrabold text-white tracking-tight mb-2">
+                        2. Premii de Performanta &amp; Popularitate (Cumulabile!)
                     </h2>
-                    <p class="text-slate-400 text-xs md:text-sm mb-4">
-                        Poti cumula premiile de performanta cu cele de participare pentru a obtine pana la <span class="text-emerald-400 font-bold">+20% comision total suplimentar</span> in luna Noiembrie:
+                    <p class="text-slate-400 text-xs mb-3">
+                        Poti cumula premiile speciale de performanta cu cele de participare pentru a obtine pana la <strong class="text-white">+20% extra comision</strong> in Noiembrie:
                     </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div class="p-2 md:p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center">
-                            <div>
-                                <h4 class="text-xs font-bold text-slate-200">🥇 Top Comisioane (Locurile 1, 2, 3)</h4>
-                                <p class="text-[11px] text-slate-400">Cel mai mare volum generat</p>
+                    
+                    <div class="flex flex-col md:flex-row gap-2 text-[11px] md:text-xs">
+                        <!-- COLUMN 1: PRIZES 1 TO 5 -->
+                        <div class="flex flex-col gap-2 w-full md:w-1/2">
+                            <!-- item 1 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">🥇</span>
+                                    <span class="font-medium text-slate-300">Top Comisioane (Locul 1)</span>
+                                </div>
+                                <span class="font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+10% Extra</span>
                             </div>
-                            <span class="text-[11px] font-extrabold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded-md">pana la +10%</span>
+                            <!-- item 2 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">🥈</span>
+                                    <span class="font-medium text-slate-300">Top Comisioane (Locul 2)</span>
+                                </div>
+                                <span class="font-bold text-cyan-400 bg-cyan-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+8% Extra</span>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">🥉</span>
+                                    <span class="font-medium text-slate-300">Top Comisioane (Locul 3)</span>
+                                </div>
+                                <span class="font-bold text-purple-400 bg-purple-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+5% Extra</span>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">🔗</span>
+                                    <span class="font-medium text-slate-300">Cele Mai Multe Relatii Aplicate &amp; Acceptate</span>
+                                </div>
+                                <span class="font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+10% Extra</span>
+                            </div>
+                            <!-- item 5 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">🛒</span>
+                                    <span class="font-medium text-slate-300">Cele Mai Multe Vanzari</span>
+                                </div>
+                                <span class="font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+10% Extra</span>
+                            </div>
                         </div>
-                        <div class="p-2 md:p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center">
-                            <div>
-                                <h4 class="text-xs font-bold text-slate-200">🔗 Relatii Aprobate & Active</h4>
-                                <p class="text-[11px] text-slate-400">Cele mai multe magazine cu trafic</p>
+
+                        <!-- COLUMN 2: PRIZES 6 TO 10 -->
+                        <div class="flex flex-col gap-2 w-full md:w-1/2">
+                            <!-- item 6 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">🎯</span>
+                                    <span class="font-medium text-slate-300">Cea Mai Mare Rata de Conversie (CR)</span>
+                                </div>
+                                <span class="font-bold text-cyan-400 bg-cyan-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+10% Extra</span>
                             </div>
-                            <span class="text-[11px] font-extrabold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded-md">+10% Extra</span>
-                        </div>
-                        <div class="p-2 md:p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center">
-                            <div>
-                                <h4 class="text-xs font-bold text-slate-200">🛒 Cele mai multe vanzari</h4>
-                                <p class="text-[11px] text-slate-400">Volum absolut vanzari generate</p>
+                            <!-- item 7 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">💡</span>
+                                    <span class="font-medium text-slate-300">Cel Mai Original Proiect</span>
+                                </div>
+                                <span class="font-bold text-purple-400 bg-purple-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+10% Extra</span>
                             </div>
-                            <span class="text-[11px] font-extrabold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded-md">+10% Extra</span>
-                        </div>
-                        <div class="p-2 md:p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center">
-                            <div>
-                                <h4 class="text-xs font-bold text-slate-200">🎯 Conversie de Top (CR)</h4>
-                                <p class="text-[11px] text-slate-400">Cea mai buna rata (min 500 clickuri)</p>
+                            <!-- item 8 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">⚡</span>
+                                    <span class="font-medium text-slate-300">Challenge Business League Castigat</span>
+                                </div>
+                                <span class="font-bold text-amber-400 bg-amber-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+10% Extra</span>
                             </div>
-                            <span class="text-[11px] font-extrabold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded-md">+10% Extra</span>
+                            <!-- item 9 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">⭐</span>
+                                    <span class="font-medium text-slate-300">Premiu de Popularitate (Vot Participanti)</span>
+                                </div>
+                                <span class="font-bold text-rose-400 bg-rose-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+10% Extra</span>
+                            </div>
+                            <!-- item 10 -->
+                            <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                                <div class="flex items-center gap-2 mr-4">
+                                    <span class="text-xs">🎖️</span>
+                                    <span class="font-medium text-slate-300">Premiul Echipei (Cel Mai Silitor)</span>
+                                </div>
+                                <span class="font-bold text-rose-400 bg-rose-500/10 px-1.5 py-0.5 rounded-md whitespace-nowrap shrink-0">+10% Extra</span>
+                            </div>
                         </div>
                     </div>
                 </div>
