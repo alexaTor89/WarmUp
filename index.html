@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Friday Warm-up 2026 — Prezentare Interactiva</title>
+    <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #07090E;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(120, 57, 238, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.12) 0%, transparent 50%);
+        }
+        .slide-transition {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <div class="w-full max-w-3xl flex flex-col gap-6">
+        <!-- HEADER -->
+        <div class="flex items-center justify-between px-2">
+            <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-purple-600 to-cyan-500 p-0.5 shadow-lg shadow-purple-500/20">
+                    <div class="flex h-full w-full items-center justify-center rounded-[10px] bg-[#0d121f]">
+                        <span class="text-sm font-black text-cyan-400">2P</span>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-sm font-bold tracking-wider text-slate-400 uppercase">Black Friday 2026</h1>
+                    <p class="text-xs text-cyan-400 font-semibold">Warm-up Cohort Presentation</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-xs text-slate-400 font-medium">Interactive Guide</span>
+            </div>
+        </div>
+
+        <!-- MAIN INTERACTIVE SLIDER CONTAINER -->
+        <div class="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-[#0d121f]/90 p-8 md:p-10 shadow-2xl backdrop-blur-xl">
+            <!-- BACKGROUND GLOWS Inside Card -->
+            <div class="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-purple-500/10 blur-3xl pointer-events-none"></div>
+            <div class="absolute -left-20 -bottom-20 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl pointer-events-none"></div>
+
+            <!-- SLIDES WRAPPER -->
+            <div id="slides-container" class="relative min-h-[300px]">
+                
+                <!-- SLIDE 1: KICK OFF -->
+                <div id="slide-content-1" class="slide-transition opacity-100 block">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-bold tracking-widest text-purple-400 uppercase">Slide 1 din 5</span>
+                        <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20">🚀 KICK-OFF</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-4">
+                        Black Friday Warm-up 2026
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-6">
+                        Te invitam in programul exclusiv <strong class="text-white">Black Friday Warm-up 2026</strong> – un program practic de <span class="text-cyan-400 font-extrabold text-lg">5 saptamani</span> creat special pentru afiliatii aflati la inceput de drum. Scopul nostru este sa va ghidam pas cu pas spre primele vanzari si rezultate remarcabile de Black Friday.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <span class="text-xs text-cyan-400 font-semibold">📅 START DATE</span>
+                            <p class="text-sm font-bold text-slate-200 mt-1">Joi, 24 Septembrie</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <span class="text-xs text-purple-400 font-semibold">⏱ FORMAT</span>
+                            <p class="text-sm font-bold text-slate-200 mt-1">Ateliere live de 60 min, Q&A & deblocari live</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2: PARTICIPATION BONUSES -->
+                <div id="slide-content-2" class="slide-transition opacity-0 hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-bold tracking-widest text-purple-400 uppercase">Slide 2 din 5</span>
+                        <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">🎁 PARTICIPARE</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-3">
+                        1. Bonusuri de Participare
+                    </h2>
+                    <p class="text-slate-400 text-sm mb-5">
+                        Incentivam seriozitatea! Toate bonusurile de participare se aplica direct ca procentaj extra la <strong class="text-white">comisioanele intregii luni Noiembrie</strong> (perioada de varf a vanzarilor de BF):
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/40 border border-slate-800 hover:border-purple-500/30 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span class="flex h-7 w-7 items-center justify-center rounded-full bg-purple-500/20 text-xs font-bold text-purple-300">5/5</span>
+                                <span class="text-sm font-semibold text-slate-300">Campion Complet (toate cele 5 webinarii + task-uri simple)</span>
+                            </div>
+                            <span class="text-sm font-black text-purple-400">+10% Extra</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/40 border border-slate-800 hover:border-cyan-500/30 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span class="flex h-7 w-7 items-center justify-center rounded-full bg-cyan-500/20 text-xs font-bold text-cyan-300">4/5</span>
+                                <span class="text-sm font-semibold text-slate-300">Participant Consecvent (minim 4 webinarii cu teme bifate)</span>
+                            </div>
+                            <span class="text-sm font-black text-cyan-400">+8% Extra</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/40 border border-slate-800 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span class="flex h-7 w-7 items-center justify-center rounded-full bg-slate-800 text-xs font-bold text-slate-400">3/5</span>
+                                <span class="text-sm font-semibold text-slate-300">Participant Activ (minim 3 sesiuni din program)</span>
+                            </div>
+                            <span class="text-sm font-black text-slate-300">+5% Extra</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/40 border border-slate-800 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span class="flex h-7 w-7 items-center justify-center rounded-full bg-slate-800 text-xs font-bold text-slate-400">1/5</span>
+                                <span class="text-sm font-semibold text-slate-300">Bun Venit (minim o participare + profil 100% complet)</span>
+                            </div>
+                            <span class="text-sm font-black text-slate-300">+3% Extra</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3: PERFORMANCE PRIZES -->
+                <div id="slide-content-3" class="slide-transition opacity-0 hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-bold tracking-widest text-purple-400 uppercase">Slide 3 din 5</span>
+                        <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">🏆 PERFORMANTA</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-2">
+                        2. Premii Extra (Cumulabile!)
+                    </h2>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Poti cumula premiile de performanta cu cele de participare pentru a obtine pana la <span class="text-emerald-400 font-bold">+20% comision total suplimentar</span> in luna Noiembrie:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-200">🥇 Top Comisioane (Locurile 1, 2, 3)</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Cel mai mare volum generat sept-oct</p>
+                            </div>
+                            <span class="text-xs font-extrabold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-md">pana la +10%</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-200">🔗 Relatii Aprobate & Active</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Cele mai multe magazine cu trafic</p>
+                            </div>
+                            <span class="text-xs font-extrabold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-md">+10% Extra</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-200">🛒 Cele mai multe vanzari</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Volum absolut vanzari generate</p>
+                            </div>
+                            <span class="text-xs font-extrabold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-md">+10% Extra</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 flex justify-between items-center">
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-200">🎯 Conversie de Top (CR)</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Cea mai buna rata (min 500 clickuri)</p>
+                            </div>
+                            <span class="text-xs font-extrabold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded-md">+10% Extra</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 4: RULES -->
+                <div id="slide-content-4" class="slide-transition opacity-0 hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-bold tracking-widest text-purple-400 uppercase">Slide 4 din 5</span>
+                        <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">📋 REGULAMENT</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-4">
+                        📋 Regulile Jocului (Simple &amp; Obligatorii)
+                    </h2>
+                    <p class="text-slate-400 text-base mb-6">
+                        Pentru a mentine un mediu de competitie corect si a valida extra-comisioanele in Noiembrie, trebuie sa indeplinesti urmatoarele reguli simple:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start p-3 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-xs font-bold text-amber-300">1</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Profil completat 100% in platforma</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Asigura-te ca detaliile contului tau de afiliat sunt complet incarcate.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start p-3 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-xs font-bold text-amber-300">2</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Declararea transparenta a canalelor de promovare</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Inregistreaza si descrie site-urile, paginile sau campaniile PPC folosite.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start p-3 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-500/20 text-xs font-bold text-amber-300">3</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Respectarea stricta a regulilor de Brand Bidding</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Zero sanctiuni sau incalcari ale politicilor de brand pe perioada campaniei.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 5: VALOARE EXTRA -->
+                <div id="slide-content-5" class="slide-transition opacity-0 hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-bold tracking-widest text-purple-400 uppercase">Slide 5 din 5</span>
+                        <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-rose-500/10 text-rose-300 border border-rose-500/20">💎 PRIVILEGII</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-4">
+                        💎 Valoare Extra pentru Rising Stars
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-6">
+                        Pe langa stimulentele financiare directe, cei mai motivati si activi afiliati din aceasta cohorta vor obtine beneficii premium exclusive:
+                    </p>
+                    <div class="grid grid-cols-1 gap-3">
+                        <div class="flex gap-3 items-center p-3.5 rounded-xl bg-purple-950/15 border border-purple-500/20">
+                            <span class="text-xl">🎙</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Strategie individuala 1:1 (45 min) cu Tudor Stanica</h4>
+                                <p class="text-xs text-purple-300">Audit de cont dedicat si plan strategic personalizat de scalare.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center p-3.5 rounded-xl bg-cyan-950/15 border border-cyan-500/20">
+                            <span class="text-xl">👨‍💼</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Fast-track in portofoliul unui Affiliate Manager dedicat</h4>
+                                <p class="text-xs text-cyan-300">Suport tehnic si operational prioritar (Alexandra, Vlad sau Stefan).</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center p-3.5 rounded-xl bg-emerald-950/15 border border-emerald-500/20">
+                            <span class="text-xl">💬</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Grup VIP privat de WhatsApp</h4>
+                                <p class="text-xs text-emerald-300">Alerte instante despre oferte de Black Friday, bugete exclusive si networking direct.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CONTROLS FOOTER -->
+            <div class="flex items-center justify-between mt-8 pt-6 border-t border-slate-800">
+                <button id="prev-btn" onclick="prevSlide()" class="px-4 py-2 text-sm font-bold text-slate-400 hover:text-white transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed" disabled>
+                    ⬅️ Previous
+                </button>
+                
+                <!-- PROGRESS DOTS -->
+                <div class="flex items-center gap-1.5">
+                    <span id="dot-1" class="h-2 w-2 rounded-full bg-purple-500 shadow-[0_0_8px_#7839EE] transition-all duration-300"></span>
+                    <span id="dot-2" class="h-2 w-2 rounded-full bg-slate-700 transition-all duration-300"></span>
+                    <span id="dot-3" class="h-2 w-2 rounded-full bg-slate-700 transition-all duration-300"></span>
+                    <span id="dot-4" class="h-2 w-2 rounded-full bg-slate-700 transition-all duration-300"></span>
+                    <span id="dot-5" class="h-2 w-2 rounded-full bg-slate-700 transition-all duration-300"></span>
+                </div>
+
+                <button id="next-btn" onclick="nextSlide()" class="px-5 py-2.5 text-sm font-bold rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg shadow-purple-500/25 hover:from-purple-500 hover:to-indigo-500 hover:shadow-purple-500/40 transition-all cursor-pointer">
+                    Next Slide ➡️
+                </button>
+            </div>
+        </div>
+
+        <!-- PROGRESS BAR HEADER -->
+        <div class="w-full bg-slate-900 rounded-full h-1.5 border border-slate-800 overflow-hidden">
+            <div id="progress-fill" class="bg-gradient-to-r from-purple-500 to-cyan-400 h-full w-[20%] transition-all duration-500"></div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT CONTROLS -->
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 5;
+
+        function updateSlideVisibility() {
+            // Hide all slides
+            for (let i = 1; i <= totalSlides; i++) {
+                const slide = document.getElementById(`slide-content-${i}`);
+                const dot = document.getElementById(`dot-${i}`);
+                
+                slide.classList.add('opacity-0', 'hidden');
+                slide.classList.remove('opacity-100', 'block');
+                
+                dot.className = 'h-2 w-2 rounded-full bg-slate-700 transition-all duration-300';
+            }
+
+            // Show current slide
+            const activeSlide = document.getElementById(`slide-content-${currentSlide}`);
+            const activeDot = document.getElementById(`dot-${currentSlide}`);
+            
+            activeSlide.classList.remove('hidden');
+            setTimeout(() => {
+                activeSlide.classList.remove('opacity-0');
+                activeSlide.classList.add('opacity-100', 'block');
+            }, 50);
+
+            activeDot.className = 'h-2 w-2 rounded-full bg-purple-500 shadow-[0_0_8px_#7839EE] transition-all duration-300';
+
+            // Update Progress Fill
+            const percent = (currentSlide / totalSlides) * 100;
+            document.getElementById('progress-fill').style.width = `${percent}%`;
+
+            // Update Button Disabled States
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            if (currentSlide === 1) {
+                prevBtn.disabled = true;
+                prevBtn.classList.add('opacity-30', 'cursor-not-allowed');
+            } else {
+                prevBtn.disabled = false;
+                prevBtn.classList.remove('opacity-30', 'cursor-not-allowed');
+            }
+
+            if (currentSlide === totalSlides) {
+                nextBtn.innerHTML = 'Reia de la inceput 🔄';
+            } else {
+                nextBtn.innerHTML = 'Next Slide ➡️';
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+            } else {
+                currentSlide = 1;
+            }
+            updateSlideVisibility();
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+            }
+            updateSlideVisibility();
+        }
+    </script>
+</body>
+</html>
